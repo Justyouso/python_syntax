@@ -2,11 +2,14 @@
 # @Author: wangchao
 # @Time: 19-10-24 下午9:16
 
+"""
+使用偏函数与类实现装饰器
+"""
 import time
 import functools
 
 
-class DelayFunc:
+class DelayFunc(object):
     def __init__(self, duration, func):
         self.duration = duration
         self.func = func

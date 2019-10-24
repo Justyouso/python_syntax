@@ -2,6 +2,9 @@
 # @Author: wangchao
 # @Time: 19-10-23 上午11:23
 
+"""
+不带参数的类装饰器
+"""
 
 class logger(object):
     def __init__(self, func):

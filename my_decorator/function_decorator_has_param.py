@@ -2,6 +2,10 @@
 # @Author: wangchao
 # @Time: 19-10-23 上午10:43
 
+"""
+带参数方法装饰器
+"""
+
 
 def say_hello(country):
     def wrapper(func):
@@ -24,6 +28,7 @@ def say_name(name):
 
 def say_name_without_decorator(name):
     print("我叫:{}".format(name))
+
 
 if __name__ == '__main__':
     print("======= 装饰器调用 =======")
