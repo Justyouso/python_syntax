@@ -6,8 +6,7 @@
 使用偏函数与类实现装饰器
 """
 import time
-import functools
-
+from functools import partial
 
 class DelayFunc(object):
     def __init__(self, duration, func):
@@ -46,10 +45,10 @@ def delay(duration):
     :return: 
     """
     # 直接使用偏函数帮助构造 DelayFunc 实例
-    return functools.partial(DelayFunc, duration)
+    return partial(DelayFunc, duration)
 
 
-@delay(duration=2)
+@delay_without_partial(duration=2)
 def add(a, b):
     return a + b
 
