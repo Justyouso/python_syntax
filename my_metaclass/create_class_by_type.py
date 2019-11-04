@@ -14,8 +14,10 @@
 class BaseClass:
     def talk(self):
         print("我是一个基类")
+
     def test(self):
         pass
+
 
 # 准备一个方法
 def say(self):
